@@ -26,11 +26,11 @@ contract ZombieHelper is ZombieFeeding {
     uint counter = 0;
     
     // Declare a for loop that starts from uint i=0 and goes up through i < zombies.length.
-    for (uint i=0; i < zombies.length; i++) {
+    for (uint i = 0; i < zombies.length; i++) {
         
         // Make an if statement that checks if zombieToOwner[i] is equal to _owner.
         // This will compare the two addresses to see if there is a match.
-        if (zombieToOwner[i] = _owner) {
+        if (zombieToOwner[i] == _owner) {
             result[counter] = i; 
             counter++;
         }
